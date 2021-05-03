@@ -31,7 +31,7 @@ namespace ConsoleApp1
             {
                 Console.Write("입력(exit)를 입력하면 종료) : ");
                 input = Console.ReadLine();
-                switch(input)
+                switch (input)
                 {
                     case "1":
                         Console.WriteLine("go 공지사항");
@@ -44,6 +44,38 @@ namespace ConsoleApp1
                         break;
                 }
             } while (input != "exit");
+
+            for (int i2 = '가'; i2 <= '힣'; i2++)
+            {
+                Console.Write((char)i2);
+            }
+
+            for (i = intArray3.Length - 1; i >= 0; i--)
+            {
+                Console.WriteLine(intArray[i]);
+            }
+
+            string[] array = { "사과", "배", "포도", "딸기", "바나나" };
+            foreach (string item in array)
+            {
+                Console.WriteLine(item);
+            }
+
+            for (i = 0; i < 10; i++)
+            {
+                for (int j = 0; j < i + 1; j++)
+                    Console.Write("*");
+                Console.WriteLine("");
+            }
+
+            for(i = 0; i < 10; i++)
+            {
+                for (int j = 0; j < 10 - i; j++)
+                    Console.Write('  ');
+                for (int j = 0; j < i + 1; j++)
+                    Console.Write('\n');
+            }
         }
+
     }
 }
