@@ -17,7 +17,6 @@ namespace ConsoleApp1
             int[] intArray2 = new int[1000];
             Console.WriteLine(intArray2[0]);
             Console.WriteLine(intArray2[999]);
-            Console.WriteLine(intArray2[999]);
         }
     }
 }
